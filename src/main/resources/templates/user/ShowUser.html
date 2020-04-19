@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<link rel="stylesheet" href="../static/mystyle.css"
+	th:href="@{/mystyle.css}">
+
+<title>Show Users</title>
+</head>
+<body>
+
+	<span th:text="'Name Is=> '+${name}"></span>
+	<br>
+	<span th:text="'Email Is=> '+${email}"></span>
+	<br>
+	<span th:text="'Password Is=>'+${password}"></span>
+	<br>
+	<span th:text="'Salary Is=>'+${salary}"></span>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Password</th>
+				<th>Salary</th>
+			</tr>
+		</thead>
+		<tr th:each="user : ${users}">
+			<td th:text="${user.id}"></td>
+			<td th:text="${user.name}"></td>
+			<td th:text="${user.password}"></td>
+			<td th:text="${user.email}"></td>
+			<td th:text="${user.salary}"></td>
+		</tr>
+		<tbody>
+
+		</tbody>
+	</table>
+
+</body>
+</html>
