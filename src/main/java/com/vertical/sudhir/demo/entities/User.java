@@ -3,6 +3,7 @@ package com.vertical.sudhir.demo.entities;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class User {
@@ -12,6 +13,7 @@ public class User {
 	private Long id;
 	private String name;
 	private String password;
+	@NotBlank(message = "Email is Required field...")
 	private String email;
 	private Double salary;
 	
