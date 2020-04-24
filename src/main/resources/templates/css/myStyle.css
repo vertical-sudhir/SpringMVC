@@ -1,0 +1,30 @@
+.cBox{
+
+    border: 5px solid black;
+}
+.cRaw
+{
+    border:10px solid yellow;
+}
+.aDiv{
+    background-color: cyan;
+    height: 60px;
+}.bDiv{
+    background-color: red;
+    height: 60px;
+}.cDiv{
+    background-color: blue;
+    height: 60px;
+}
+.dDiv{
+    background-color: greenyellow;
+    height: 60px;
+}
+.eDiv{
+    background-color: orchid;
+    height: 60px;
+}
+.fDiv{
+    background-color: seagreen;
+    height: 60px;
+}
